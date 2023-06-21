@@ -1,0 +1,24 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Fake News Detection</h1>
+    <form action="/" method="POST">
+        <label for="number">Enter a dataset index:</label>
+        <input type="number" id="number" name="number" required>
+        <button type="submit">Predict</button>
+    </form>
+        {% if text %}
+            {% if prediction %}
+                <div class="result-box {{ prediction_class }}">
+                    <h2>Tweet: {{ text }}</h2>
+                    <h2>Prediction: {{ prediction }}</h2>
+                </div>
+            {% endif %}
+        {% endif %}
+    {% if image_data %}
+        <img src="data:image/png;base64,{{ image_data }}" alt="Graph">
+    {% endif %}
+</body>
+</html>
