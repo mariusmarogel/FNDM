@@ -12,7 +12,7 @@ This repository represents the implementation of 'Context and Network-Aware Fake
 - transformers 4.30.2
 - NetworkX 2.8.4
 - Matplotlib 3.7.1
-- Flask
+- Flask 2.3.2
 
 ## Utilization
 To create Word Embeddings with Word2Vec, BERT, or BERTweet run notebooks: Word2VecEmbeddings, BERTandBERTweet Embeddings. The output from running these is (t15 stands for Twitter15 and t16 stands for Twitter16):
