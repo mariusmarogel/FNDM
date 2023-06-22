@@ -18,6 +18,7 @@ This repository represents the implementation of 'Context and Network-Aware Fake
 To create Word Embeddings with Word2Vec, BERT, or BERTweet run notebooks: Word2VecEmbeddings, BERTandBERTweet Embeddings. The output from running these is (t15 stands for Twitter15 and t16 stands for Twitter16):
 - t15_w2v_emb_matrix.npy, t16_w2v_emb_matrix.npy files with Word2Vec embeddings
 - t15_bert_emb.npy, t16_bert_emb.npy, t15_bertweet_emb.npy, t16_bertweet_emb.npy files with BERT and BERTweet embeddings
+
 To create Node Embeddings wth Node2Vec and DeepWalk run notebooks: Node2Vec Embeddings, DeepWalkEmbedings. The output from runnins these is:
 - 2 folders _32d_ and _100d_ with six files for each dataset, each representing Node2Vec Embeddings for different (p, q) pairs. Check the notebook for the order
 - 32d/t15_dw_emb.npy, 32d/t16_dw_emb.npy, 100d/t15_dw_emb.npy, 100d/t15_dw_emb.npy files with DeepWalk Embeddings.
