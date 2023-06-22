@@ -1,6 +1,26 @@
 # FNDM
 This repository represents the implementation of 'Context and Network-Aware Fake News Detection and Mitigation'.
 
+# Packages
+- Python 3.10.9
+- nltk 3.8.1
+- scikit-learn 1.2.2
+- Gensim > 4.0
+- node2vec 0.4.6
+- karateclub 1.3.3
+- Tensorflow, Keras 2.12.0
+- transformers 4.30.2
+- NetworkX 2.8.4
+- Matplotlib 3.7.1
+
+# Utilization
+To create Word Embeddings with Word2Vec, BERT, or BERTweet run notebooks: Word2VecEmbeddings, BERTandBERTweet Embeddings. The output from running these is (t15 stands for Twitter15 and t16 stands for Twitter16):
+- t15_w2v_emb_matrix.npy, t16_w2v_emb_matrix.npy files with Word2Vec embeddings
+- t15_bert_emb.npy, t16_bert_emb.npy, t15_bertweet_emb.npy, t16_bertweet_emb.npy files with BERT and BERTweet embeddings
+To create Node Embeddings wth Node2Vec and DeepWalk run notebooks: Node2Vec Embeddings, DeepWalkEmbedings. The output from runnins these is:
+- 2 folders _32d_ and _100d_ with six files for each dataset, each representing Node2Vec Embeddings for different (p, q) pairs. Check the notebook for the order
+- 32d/t15_dw_emb.npy, 32d/t16_dw_emb.npy, 100d/t15_dw_emb.npy, 100d/t15_dw_emb.npy files with DeepWalk Embeddings
+
 - the SparseShield implementation repository can be found [here](https://github.com/DS4AI-UPB/CONTAIN/tree/main/SparseShield_NIvsHS)
 - in this repository, we use a file called 't15_imm_nodes.txt' to access the nodes to be immunized from SparseShield algorithm. Each line contains k nodes to be immunized, with k = 10% of the total number of nodes in the graph.
 
